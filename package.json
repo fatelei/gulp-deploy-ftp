@@ -1,6 +1,6 @@
 {
   "name": "gulp-deploy-ftp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gulpplugin: deploy via ftp",
   "main": "index.js",
   "scripts": {
