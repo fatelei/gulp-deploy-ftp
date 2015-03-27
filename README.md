@@ -1,4 +1,7 @@
 # gulp-deploy-ftp
+
+[![Build Status]](https://travis-ci.org/fatelei/gulp-deploy-ftp.svg?branch=master)
+
 Upload file(s) through ftp
 
 ## Install
