@@ -2,7 +2,7 @@
 
 ![Build Status](https://travis-ci.org/fatelei/gulp-deploy-ftp.svg?branch=master)
 
-Upload file(s) through ftp
+Upload file through ftp
 
 ## Install
 ```
@@ -11,18 +11,16 @@ npm install --save-dev gulp-deploy-ftp
 
 ## Usage
 ```
-var gulp = require('gulp');
-var gulpDeployFtp = require('gulp-deploy-ftp');
-
-var options = {
-  user: username,
-  password: password,
-  port: ftp server port,
-  host: ftp server host,
-  uploadPath: target path
-};
+const gulp = require('gulp');
+const gulpDeployFtp = require('gulp-deploy-ftp');
 
 gulp.src('path/to/file')
-  .pipe(gulpDeployFtp(options))
+  .pipe(gulpDeployFtp({
+    remotePath: '/tmp',
+    host: 'localhost',
+    port: 21,
+    user: 'foo',
+    pass: 'bar'
+  })
   .pipe(gulp.dest('dest'));
 ```

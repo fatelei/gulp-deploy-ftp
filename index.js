@@ -2,6 +2,6 @@
  * Main entry
  */
 
-var gulpDeployFtp = require('./lib/core');
+const gulpDeployFtp = require('./lib/core');
 
 module.exports = gulpDeployFtp;
