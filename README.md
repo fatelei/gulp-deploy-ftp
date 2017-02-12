@@ -5,12 +5,14 @@
 Upload file through ftp
 
 ## Install
-```
+
+```Shell
 npm install --save-dev gulp-deploy-ftp
 ```
 
 ## Usage
-```
+
+```JavaScript
 const gulp = require('gulp');
 const gulpDeployFtp = require('gulp-deploy-ftp');
 
