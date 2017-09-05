@@ -8,27 +8,23 @@ describe('Test gulp-deploy-ftp', () => {
   let _cli;
   let fakeFile;
   beforeEach(() => {
-    _cli = new FtpClient('.')
-
     fakeFile = new Vinyl({
       cwd: '/',
       base: '/test/',
       path: '/test/file.js',
       contents: new Buffer('var x = 123')
     });
-
-    spyOn(_cli, 'upload');
   });
 
   describe('Test remotePath is empty', () => {
     it('should raise an exception', () => {
-      expect(gulpDeployFtp).toThrow();
+      expect(gulpDeployFtp).toThrowError(Error);
     });
   });
 
   describe('Test upload file via ftp', () => {
     it('should upload successfully', () => {
-      gulpDeployFtp('/tmp').write(fakeFile);
+      gulpDeployFtp('/upload/test', 'speedtest.tele2.net').write(fakeFile)
     });
   });
 });

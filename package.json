@@ -17,13 +17,13 @@
     "deploy"
   ],
   "dependencies": {
-    "jsftp": "~1.5.5",
+    "jsftp": "~2.0.0",
     "gulp-util": "~3.0.8",
     "through2": "~2.0.3"
   },
   "devDependencies": {
-    "vinyl": "~0.4.6",
-    "jasmine": "~2.4"
+    "vinyl": "~2.1.0",
+    "jasmine": "~2.8.0"
   },
   "engines": {
     "node": ">=7.4.0"
