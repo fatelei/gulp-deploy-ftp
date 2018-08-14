@@ -23,6 +23,6 @@ gulp.src('path/to/file')
     port: 21,
     user: 'foo',
     pass: 'bar'
-  })
+  }))
   .pipe(gulp.dest('dest'));
 ```
